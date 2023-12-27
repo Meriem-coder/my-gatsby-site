@@ -21,7 +21,7 @@ import Layout from '../component/Layout'
 const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
-      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+      <p>Hi there,what do you want to know about me :).</p>
     </Layout>
   )
 }
@@ -29,3 +29,5 @@ const AboutPage = () => {
 export const Head = () => <title>About Me</title>
 
 export default AboutPage
+
+

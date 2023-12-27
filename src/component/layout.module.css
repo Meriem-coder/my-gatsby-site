@@ -1,20 +1,84 @@
 .container {
-    margin: auto;
-    max-width: 500px;
-    font-family: sans-serif;
+  margin: auto;
+  max-width: 500px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px; /* Ajoutez un peu d'espace à l'intérieur du conteneur */
+}
+
+.heading {
+  color: rebeccapurple;
+  font-size: 24px;
+  margin-bottom: 20px; /* Ajouter un peu d'espace en dessous du titre */
+  transition: color 0.3s ease-in-out; /* Ajouter une transition pour la couleur */
+}
+
+.heading:hover {
+  color: #800080; /* Changer la couleur au survol */
+}
+
+.nav-links-container {
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
   }
-  
-  .heading {
-    color: rebeccapurple;
+  to {
+      opacity: 1;
+      transform: translateY(0);
   }
-  .nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-  }
-  .nav-link-item {
-    padding-right: 2rem;
-  }
-  .nav-link-text {
-    color: black;
-  }
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  border-bottom: 1px solid #ddd; /* Ajouter une bordure en bas */
+}
+
+.nav-link-item {
+  padding: 10px 15px;
+  padding-right: 2rem;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Ajouter une transition pour la couleur et l'arrière-plan */
+}
+
+.nav-link-item:hover {
+  background-color: #f0f0f0; /* Ajouter une couleur de fond au survol */
+  cursor: pointer; /* Modifier le curseur au survol des liens pour indiquer qu'ils sont interactifs */
+  text-decoration: underline; /* Ajouter un effet de soulignement au survol */
+  border-radius: 5px; /* Ajouter une bordure arrondie au survol */
+}
+
+.nav-link-item:hover .nav-link-text {
+  color: #333; /* Changer la couleur au survol */
+  font-size: 18px; /* Augmenter la taille du texte au survol */
+}
+
+.nav-link-text {
+  color: black;
+  display: flex;
+  align-items: center; /* Centrer verticalement le texte */
+}
+
+/* Ajouter une marge à gauche pour tous les liens sauf le premier */
+.nav-link-item + .nav-link-item {
+  margin-left: 10px;
+}
+
+
+.site-title {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(107, 99, 99);
+  font-weight: 700;
+  margin: 1rem 0;
+}

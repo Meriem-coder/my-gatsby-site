@@ -7,7 +7,7 @@ const IndexPage = () => {
       <h1>Welcome to my Gatsby site!</h1>
       <Link to="/about">About</Link><br/>
       <a href="/about">About</a>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+      <p>.</p>
     </main>
   )
 }
@@ -27,7 +27,8 @@ const IndexPage = () => {
 
       <StaticImage
         alt="voici une image"
-        src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
+        src="https://www.aquaportail.com/pictures2307/phones/chat-domestique-europeen.jpg"
+        layout="fullWidth"
       />
     </Layout>
   )
@@ -36,6 +37,9 @@ const IndexPage = () => {
 export const Head = () => <title>Home Page</title>
 
 export default IndexPage
+
+
+
 
 
 
